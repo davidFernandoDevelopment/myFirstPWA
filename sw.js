@@ -6,7 +6,7 @@ const CACHE_DYNAMIC = "dinamyc-v1";
 const CACHE_INMUTABLE = "inmutable-v1";
 
 const APP_SHELL = [
-  "/",
+  //"/",
   "js/app.js",
   "js/sw-utils.js", // LO ESTOY IMPORTANDO
   "index.html",

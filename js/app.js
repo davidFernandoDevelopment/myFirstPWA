@@ -1,5 +1,11 @@
+var url = window.location.href;
+var swLocation = `/myFirstPWA/sw.js`;
+
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/sw.js");
+  if (url.includes("localhost")) {
+    swLocation = "/sw.js";
+  }
+  navigator.serviceWorker.register(swLocation);
 }
 
 // Referencias de jQuery
